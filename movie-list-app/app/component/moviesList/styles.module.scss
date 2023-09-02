@@ -1,0 +1,8 @@
+@import '../../styles/variables.scss';
+
+.moviesList {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    gap: 16px
+}

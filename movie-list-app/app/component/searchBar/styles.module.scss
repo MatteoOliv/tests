@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.searchBarContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    gap: 16px;
+}
+
+.filtersOpen {
+    background-color: $yellow500!important;
+    color: black!important;
+    &:hover {
+        background-color: $yellow700!important
+    }
+}
+
+.filtersButton {
+    position: relative;
+}
+
+.toolTip {
+    position: absolute;
+    background-color: $yellow500;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px white;
+    right: -16px;
+    top: 0;
+    color: black;
+    @include transform(-0%, -50%,0)
+}

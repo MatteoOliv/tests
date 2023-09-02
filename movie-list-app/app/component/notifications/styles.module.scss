@@ -1,0 +1,43 @@
+@import '../../styles/variables.scss';
+
+.notificationList {
+    position: fixed;
+    left: 0;
+    bottom: 16px;
+    z-index: 999;
+    padding: 0 16px;
+    box-sizing: border-box;
+    width: $col12;
+    @media screen and (min-width:$sm) {
+        right: 16px;
+        left: auto;
+        top: 16px;
+        width: auto;
+        max-width: 170px;
+        padding: 0;
+    }
+}
+
+.notificationWrapper {
+    border-radius: 6px;
+    background: $green500;
+    box-shadow: 0px 0px 0px 2px $border500 inset;
+    padding: 24px;
+    color: white;
+    margin-bottom: 8px;
+    width: $col12;
+    position: relative;
+    box-sizing: border-box;
+    p {
+        margin: 0;
+    }
+}
+
+.notificationCloser {
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    right: 0px;
+    top: 8px;
+    cursor: pointer;
+}

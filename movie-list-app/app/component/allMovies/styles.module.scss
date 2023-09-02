@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss';
+
+.allMoviesContainer {
+    width: $col12;
+}
+
+.loadMoreContainer {
+    position: relative;
+    margin-top: 32px;
+}

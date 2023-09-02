@@ -1,0 +1,18 @@
+@import "variables";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  @media screen and (min-width:$sm) {
+    padding: 0 $col1;
+    margin-top: 24px;
+  }
+  @media screen and (min-width: $md) {
+    padding: 0 $col2;
+  }
+}

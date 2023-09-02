@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.categoriesContainer {
+    background-color: white;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    gap: 8px
+}
+
+.categoryWrapper {
+    padding: 4px 8px;
+    border: solid 1px;
+    cursor: pointer;
+    border-radius: 4px;
+    &.notActive {
+        border-color: $gray500;
+    }
+    &.active,
+    &:hover {
+        background-color: $yellow500;
+        border-color: $yellow500;
+    }
+}
